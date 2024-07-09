@@ -17,7 +17,6 @@ public class UserCreateServlet extends HttpServlet {
    
     public UserCreateServlet() {
         super();
-        
     }
 
 	

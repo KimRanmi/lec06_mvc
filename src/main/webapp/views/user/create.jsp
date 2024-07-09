@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>회원가입</title>
-<link href="../../resources/css/user/create.css" rel="stylesheet">
+<link href="<%= request.getContextPath() %>/resources/css/user/create.css" rel="stylesheet">
 </head>
 <body>
 	<%@ include file="../include/header.jsp" %>
@@ -19,7 +19,7 @@
 				<br>신중하게 선택해주세요.</span>
 			</div><br>
 			<div class="create_account_form">
-				<form name="create_account_form" action="/user/createEnd" method="post">
+				<form name="create_account_form" action="<%= request.getContextPath() %>/user/createEnd" method="post">
 					<input type="text" name="user_id" placeholder="아이디"> <br>
 					<input type="password" name="user_pw" placeholder="비밀번호"> <br>
 					<input type="password" name="user_pw_check" placeholder="비밀번호 확인"> <br>
