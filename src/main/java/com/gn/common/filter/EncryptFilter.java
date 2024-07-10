@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import com.gn.PasswordEncodingWrapper;
 
 
-@WebFilter(servletNames= {"userCreateEnd"})
+@WebFilter(servletNames= {"userCreateEnd","userLoginEnd"})
 public class EncryptFilter extends HttpFilter implements Filter {
   
     public EncryptFilter() {
