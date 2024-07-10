@@ -6,7 +6,7 @@ public class Board {
 	private int board_no;
 	private String board_title;
 	private String board_content;
-	private int board_wirter;
+	private int board_writer;
 	private LocalDateTime reg_date;
 	private LocalDateTime mod_date;
 	private String ori_thumbnail;
@@ -22,7 +22,7 @@ public class Board {
 		this.board_no = board_no;
 		this.board_title = board_title;
 		this.board_content = board_content;
-		this.board_wirter = board_wirter;
+		this.board_writer = board_wirter;
 		this.reg_date = reg_date;
 		this.mod_date = mod_date;
 		this.ori_thumbnail = ori_thumbnail;
@@ -53,12 +53,12 @@ public class Board {
 		this.board_content = board_content;
 	}
 
-	public int getBoard_wirter() {
-		return board_wirter;
+	public int getBoard_writer() {
+		return board_writer;
 	}
 
-	public void setBoard_wirter(int board_wirter) {
-		this.board_wirter = board_wirter;
+	public void setBoard_wirter(int board_writer) {
+		this.board_writer = board_writer;
 	}
 
 	public LocalDateTime getReg_date() {
@@ -96,7 +96,7 @@ public class Board {
 	@Override
 	public String toString() {
 		return board_no + "||" + board_title + "||" + board_content
-				+ "||" + board_wirter + "||" + reg_date + "||" + mod_date
+				+ "||" + board_writer + "||" + reg_date + "||" + mod_date
 				+ "||" + ori_thumbnail + "||" + new_thumbnail;
 	}
 	

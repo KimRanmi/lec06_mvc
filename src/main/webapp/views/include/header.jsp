@@ -6,7 +6,7 @@
 	<div id="header_wrap">
 		<div class="title">	
 			<h3>
-				<a class="user" href="/">게시판</a>
+				<a class="user" href="/board/list">게시판</a>
 			</h3>
 		</div>
 	</div>
