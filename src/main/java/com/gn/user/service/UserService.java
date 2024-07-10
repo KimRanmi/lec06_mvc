@@ -21,6 +21,7 @@ public class UserService {
 		// 만들기
 		Connection conn = getConnection();
 		User u = new UserDao().loginUser(id,pw,conn);
+		close(conn);
 		return u;
 	}
 }

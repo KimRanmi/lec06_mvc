@@ -31,8 +31,8 @@ public class UserLoginEndServlet extends HttpServlet {
 		String id = request.getParameter("user_id");
 		String pw = request.getParameter("user_pw");
 
-//		User u = new UserService().loginUser(id,pw);
-		User u = new User(1,"user01","Tf9Oo0DwqCPxXT9PAati6uDl2lecy4Ufjbnf6ExYsrN7iZA6dA4e4XLaeTpuedVg5ff5vQWKEqKAQz7W+kZRCg==","홍길동");
+		User u = new UserService().loginUser(id,pw);
+//		User u = new User(1,"user01","Tf9Oo0DwqCPxXT9PAati6uDl2lecy4Ufjbnf6ExYsrN7iZA6dA4e4XLaeTpuedVg5ff5vQWKEqKAQz7W+kZRCg==","홍길동");
 //		User u = null;
 		
 		
